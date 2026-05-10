@@ -1,1 +1,282 @@
-<html><body>Test</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Doodle Mansion Dog Boarding</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f5f2;
+    }
+
+    header {
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('images/hero.jpg');
+
+      background-size: cover;
+      background-position: center;
+
+      height: 85vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #c98b3f;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #a96f2f;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.4rem;
+    }
+
+    .about-text {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .contact {
+      background: #2f2f2f;
+      color: white;
+      padding: 60px 20px;
+      border-radius: 24px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      header {
+        height: 75vh;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="hero">
+
+      <h1>Doodle Mansion</h1>
+
+      <p>
+        Luxury countryside dog boarding in County Mayo
+      </p>
+
+      <a href="#contact" class="btn">
+        Book a Meet & Greet
+      </a>
+
+    </div>
+
+  </header>
+
+  <section>
+
+    <h2>About Us</h2>
+
+    <div class="about-text">
+
+      <p>
+        At Doodle Mansion, we provide a calm, caring, home-from-home
+        experience for your dog. With countryside walks, cosy indoor
+        spaces, and lots of personal attention, your dog becomes part
+        of the family while you are away.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Dog Boarding</h3>
+        <p>
+          Overnight stays with daily walks, playtime,
+          and plenty of attention.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Day Care</h3>
+        <p>
+          Safe and supervised daytime care in a peaceful
+          countryside setting.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Puppy Care</h3>
+        <p>
+          Gentle support and routines for younger dogs
+          needing extra attention.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="images/dog1.jpg" alt="Dog outdoors">
+
+      <img src="images/dog2.jpg" alt="Happy dog">
+
+      <img src="images/dog3.jpg" alt="Dog relaxing">
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2>Contact Us</h2>
+
+      <p>📍 Rosclave, County Mayo</p>
+      <p>📞 087 123 4567</p>
+      <p>✉️ hello@doodlemansion.com</p>
+
+      <br>
+
+      <a
+        href="mailto:hello@doodlemansion.com"
+        class="btn"
+      >
+        Send an Enquiry
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Doodle Mansion Dog Boarding
+  </footer>
+
+</body>
+
+</html>
